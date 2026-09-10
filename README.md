@@ -3,8 +3,8 @@
 
 ## Dependencies
 
-- linux based operating system
-- google chrome
+- Linux based operating system
+- Google Chrome
 - node
 - npm
 
@@ -14,11 +14,11 @@
 ```sh
 git clone git@github.com:stvnhu/discord-message-deleter.git
 ```
-- move into cloned repo
+- Move into cloned repo
 ```sh
 cd discord-message-deleter
 ```
-- install npm packages
+- Install npm packages
 ```sh
 npm install
 ```
@@ -29,7 +29,7 @@ npm install
 ```sh
 cd discord-message-deleter
 ```
-- Clone google chrome profile
+- Clone Google Chrome profile
 ```sh
 cp -r "$HOME/.config/google-chrome ./chrome_profile"
 ```
