@@ -25,7 +25,7 @@ npm install
 
 ## Usage
 
-- move into cloned repo
+- Move into cloned repo
 ```sh
 cd discord-message-deleter
 ```
