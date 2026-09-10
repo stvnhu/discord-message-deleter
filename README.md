@@ -1,14 +1,14 @@
 
-## Discord Message Deleter
+# Discord Message Deleter
 
-# Dependencies
+## Dependencies
 
 - linux based operating system
 - google chrome
 - node
 - npm
 
-# Installation
+## Installation
 
 - Clone repo
 ```sh
@@ -23,7 +23,7 @@ cd discord-message-deleter
 npm install
 ```
 
-# Usage
+## Usage
 
 - move into cloned repo
 ```sh
