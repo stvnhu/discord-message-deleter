@@ -42,6 +42,9 @@ async function automate(browser) {
         for (let msg_number = 0; msg_number < elements.length; ++msg_number) {
 
             const click_target = await elements[elements.length - msg_number - 1].$('h2[class^="header_"]');
+            if (!click_target) {
+                continue;
+            }
             await click_target.click()
             await wait(600);
 
