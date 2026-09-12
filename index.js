@@ -22,14 +22,19 @@ async function automate(browser) {
     }
 
     let page_number = 1;
-    let msgs_deleted = 0
+    let msgs_deleted = 0;
+    let msgs_deleted_prev_loop = 100; // any number other than 0
 
     for (; ;) {
         try {
             const page_buttons = await page.$$('div[aria-label^="Page "]');
             const last_page = await page_buttons.at(-1);
             await last_page.click();
-            await wait(3000);
+            if (msgs_deleted === msgs_deleted_prev_loop) {
+                return;
+            }
+            msgs_deleted_prev_loop = msgs_deleted;
+            await wait(2000);
         }
         catch { }
 
@@ -68,7 +73,7 @@ async function automate(browser) {
                 }
                 prev_button.click();
                 ++page_number
-                await wait(3000);
+                await wait(2000);
             }
             catch {
                 return;
